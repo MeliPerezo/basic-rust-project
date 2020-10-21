@@ -15,10 +15,11 @@ fn main() {
 
 fn encrypt(message: String, key: String) -> String {
     let message_bytes = message.as_bytes();
+    return  String::from("");
 }
 
 fn decrypt(ciphertext: String, key: String) -> String {
-
+    return  String::from("");
 }
 
 
