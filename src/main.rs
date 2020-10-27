@@ -15,10 +15,47 @@ fn main() {
 
 fn encrypt(message: String, key: String) -> String {
     let message_bytes = message.as_bytes();
+
+    if message.len() > key.len() {
+        String::from("The key must be equal than the message.".into());
+    }
+
+    if !key
+        .chars()
+        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
+    {
+        String::from("The key source was malformed.".into());
+    }
+
+    if !message
+        .chars()
+        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
+    {
+        String::from("The plaintext was malformed.".into());
+    }
+
     return  String::from("");
 }
 
 fn decrypt(ciphertext: String, key: String) -> String {
+
+    if ciphertext.len() > key.len() {
+        String::from("The key must be equal or longer than the ciphertext.".into());
+    }
+    if !key
+        .chars()
+        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
+    {
+        String::from("The key source was malformed.".into());
+    }
+
+    if !ciphertext
+        .chars()
+        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
+    {
+        String::from("The ciphertext was malformed.".into());
+    }
+
     return  String::from("");
 }
 

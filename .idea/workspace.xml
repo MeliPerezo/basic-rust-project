@@ -43,11 +43,6 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package small-rust-app --bin small-rust-app" />
@@ -58,6 +53,12 @@
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -75,10 +76,48 @@
       <updated>1602037385652</updated>
       <workItem from="1602037387108" duration="2247000" />
       <workItem from="1603238915727" duration="156000" />
+      <workItem from="1603745209953" duration="5336000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="550" y="8" key="#Plugins" timestamp="1603745250735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="550" y="8" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1603745250735" />
+    <state x="541" y="262" key="Github.ShareDialog" timestamp="1603759961627">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="541" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1603759961627" />
+    <state width="639" height="181" key="GridCell.Tab.0.bottom" timestamp="1603759600905">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603759600905" />
+    <state width="639" height="181" key="GridCell.Tab.0.center" timestamp="1603759600903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="181" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603759600903" />
+    <state width="639" height="181" key="GridCell.Tab.0.left" timestamp="1603759600903">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="181" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603759600903" />
+    <state width="639" height="181" key="GridCell.Tab.0.right" timestamp="1603759600904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="181" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603759600904" />
   </component>
 </project>
