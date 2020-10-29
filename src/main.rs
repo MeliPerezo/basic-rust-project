@@ -1,62 +1,46 @@
 use ferris_says::say;
-use std::io::{stdout,  BufWriter};
+use std::io::{stdout, BufWriter, Error};
+use std:: io;
 
 fn main() {
-    let standard_output = stdout();
-    let message: String = String::from("We are learning cryptography");
-    let width: usize = message.chars().count();
+    let mut key_input = String::new();
+    let mut message_input = String::new();
+    let mut key_input2 = String::new();
 
-    let mut writer = BufWriter::new(standard_output.lock());
+    println!("--- Simulation Start ---");
+    println!("Please input your message: ");
+    match io::stdin().read_line(&mut message_input) {
+        Ok(_) => {
+            println!("Your message: {}", message_input);
+        }
+        _ => {}
+    }
+    println!("Please input your key: ");
+    match io::stdin().read_line(&mut key_input) {
+        Ok(_) => {
+            println!("Your key: {}", key_input);
+        }
+        _ => {}
+    }
 
-    say(message.as_bytes(), width, &mut writer).unwrap();
+    let bytes_message = convert_binary(message_input.as_str());
+    let key = convert_binary(key_input.as_str());
+    let encrypt_message = xor(bytes_message, key);
+    let encrypt_message_xor = convert_binary(encrypt_message.as_str());
+    let decrypt_message = xor(encrypt_message_xor, key);
 
-    let ciphertext =  encrypt(String::from("AAAFFFF"), String::from("AAAFFFF"));
+    println!("This is the ciphertext: {:?}", encrypt_message);
+    println!("The message: {:?}", decrypt_message);
+    println!("--- End of Simulation ---");
 }
-
-fn encrypt(message: String, key: String) -> String {
+fn convert_binary(message: &str) -> &[u8]{
     let message_bytes = message.as_bytes();
-
-    if message.len() > key.len() {
-        String::from("The key must be equal than the message.".into());
-    }
-
-    if !key
-        .chars()
-        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
-    {
-        String::from("The key source was malformed.".into());
-    }
-
-    if !message
-        .chars()
-        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
-    {
-        String::from("The plaintext was malformed.".into());
-    }
-
-    return  String::from("");
+    return message_bytes;
 }
-
-fn decrypt(ciphertext: String, key: String) -> String {
-
-    if ciphertext.len() > key.len() {
-        String::from("The key must be equal or longer than the ciphertext.".into());
+fn xor(message: &[u8], key: &[u8]) -> String{
+    let mut xor: Vec<u8> = Vec::new();
+        for n in 0.. message.len(){
+            xor.push(message[n] ^ key[n]);
     }
-    if !key
-        .chars()
-        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
-    {
-        String::from("The key source was malformed.".into());
-    }
-
-    if !ciphertext
-        .chars()
-        .all(|chr| (chr.is_alphabetic() && chr.is_uppercase()) || chr == ' ')
-    {
-        String::from("The ciphertext was malformed.".into());
-    }
-
-    return  String::from("");
+    return String::from_utf8(xor).unwrap();
 }
-
-

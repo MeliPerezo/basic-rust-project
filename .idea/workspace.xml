@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
@@ -12,8 +30,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c203969c-b3d6-4ae8-b806-88a4704673c7" name="Default Changelist" comment="">
+    <list default="true" id="c203969c-b3d6-4ae8-b806-88a4704673c7" name="Default Changelist" comment="Primer commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +61,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Expand small_rust_app">
+    <configuration name="Expand small_rust_app" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="expand --bin small-rust-app --color=always --theme=GitHub --tests" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package small-rust-app --bin small-rust-app" />
@@ -56,11 +87,32 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package small-rust-app --bin small-rust-app" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Expand small_rust_app" />
+        <item itemvalue="Cargo.Expand small_rust_app" />
+        <item itemvalue="Cargo.Expand small_rust_app" />
+        <item itemvalue="Cargo.run" />
+        <item itemvalue="Cargo.run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -76,8 +128,23 @@
       <updated>1602037385652</updated>
       <workItem from="1602037387108" duration="2247000" />
       <workItem from="1603238915727" duration="156000" />
-      <workItem from="1603745209953" duration="5336000" />
+      <workItem from="1603745209953" duration="6767000" />
+      <workItem from="1603815665144" duration="14220000" />
+      <workItem from="1603842332279" duration="595000" />
+      <workItem from="1603847948969" duration="8285000" />
+      <workItem from="1603857295510" duration="1795000" />
+      <workItem from="1603905569949" duration="12157000" />
+      <workItem from="1603948052670" duration="5882000" />
+      <workItem from="1603981895667" duration="6934000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer commit">
+      <created>1603760084310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603760084310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,31 +160,56 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="618" y="46" key="#Inspections" timestamp="1603947282917">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="618" y="46" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1603947282917" />
     <state x="550" y="8" key="#Plugins" timestamp="1603745250735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="550" y="8" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1603745250735" />
-    <state x="541" y="262" key="Github.ShareDialog" timestamp="1603759961627">
+    <state x="829" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1603849332918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="541" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1603759961627" />
-    <state width="639" height="181" key="GridCell.Tab.0.bottom" timestamp="1603759600905">
+    <state x="829" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603849332918" />
+    <state x="541" y="262" key="Github.ShareDialog" timestamp="1603760067633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="639" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603759600905" />
-    <state width="639" height="181" key="GridCell.Tab.0.center" timestamp="1603759600903">
+    <state x="541" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1603760067633" />
+    <state width="637" height="168" key="GridCell.Tab.0.bottom" timestamp="1604007888607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="639" height="181" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603759600903" />
-    <state width="639" height="181" key="GridCell.Tab.0.left" timestamp="1603759600903">
+    <state width="637" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604007888607" />
+    <state width="637" height="168" key="GridCell.Tab.0.center" timestamp="1604007888607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="639" height="181" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603759600903" />
-    <state width="639" height="181" key="GridCell.Tab.0.right" timestamp="1603759600904">
+    <state width="637" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604007888607" />
+    <state width="637" height="168" key="GridCell.Tab.0.left" timestamp="1604007888607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="639" height="181" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603759600904" />
+    <state width="637" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604007888607" />
+    <state width="637" height="168" key="GridCell.Tab.0.right" timestamp="1604007888607">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="637" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604007888607" />
+    <state x="544" y="76" key="VCS.ChangeListViewerDialog" timestamp="1603947867670">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="544" y="76" key="VCS.ChangeListViewerDialog/0.0.1366.728@0.0.1366.728" timestamp="1603947867670" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604008559130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604008559130" />
+    <state x="680" y="166" key="run.anything.popup" timestamp="1604006674164">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="680" y="166" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604006674164" />
   </component>
 </project>
